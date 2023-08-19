@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fec6d7;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .audio-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .audio-item {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .audio-title {
+    font-weight: bold;
+  }
+  
+  .audio-producer {
+    color: #794f48;
+  }
+  
+  .audio-duration {
+    color: #794f48;
+  }
+  
+  .audio-controls {
+    margin-top: 10px;
+  }
+  
+  audio {
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  
