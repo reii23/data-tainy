@@ -1,58 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fec6d7;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #111, #fec6d7); 
+  color: #eee;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3em;
+  color: #fec6d7; 
+}
+
+.audio-list {
+  list-style: none;
+  padding: 0;
+}
+
+.audio-item {
+  background-color: #333;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.audio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.audio-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.audio-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.audio-producer, .audio-duration {
+  font-size: 0.9em;
+  color: #ff9faa;
+  margin-right: 10px;
+}
+
+.audio-controls {
+  width: 30%;
+}
+
+audio {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
   .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .audio-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .audio-item {
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin: 10px 0;
-  }
-  
-  .audio-title {
-    font-weight: bold;
-  }
-  
-  .audio-producer {
-    color: #794f48;
-  }
-  
-  .audio-duration {
-    color: #794f48;
-  }
-  
-  .audio-controls {
-    margin-top: 10px;
-  }
-  
-  audio {
-    width: 100%;
-  }
-  
-  @media (max-width: 600px) {
-    .container {
       padding: 10px;
-    }
   }
-  
-  
+
+  .audio-title {
+      font-size: 1.2em;
+  }
+}
